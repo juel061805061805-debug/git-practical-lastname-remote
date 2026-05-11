@@ -11,10 +11,18 @@
     <button id="btn2">Change Color</button>
 </body>
 <script>
-document.getElementById("parag1");
-document.querySelector(".btn1");
-document.querySelector(".btn2");
+const text = document.getElementById("parag1");
+const btn = document.querySelector("#btn1");
+const btnn = document.querySelector("#btn2");
 
+btn.addEventListener("click", function(){
+alert("Button 1 triggered");
+});
 
+btnn.addEventListener('click', function(){
+
+    text.style.color = "red";
+
+});
 </script>
 </html>
